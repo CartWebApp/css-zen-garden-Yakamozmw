@@ -1,1 +1,23 @@
 /* Empty file for template. Remember to edit only this file and not the HTML file */
+h1 { font: bold 4.2rem Helvetica, Arial, sans-serif; margin: 0 0 0.5em; }
+h2 { font: bold 1.8rem Helvetica, Arial, sans-serif; margin: 0 0 1em; }
+h3 { font: bold 1.5rem Helvetica, Arial, sans-serif; margin: 0 0 1em; }
+
+#css-zen-garden {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color:blueviolet;
+}
+
+.page-wrapper {
+    width: 50vw;
+    border: 5px solid black;
+    padding: 20px;
+    background-color: rgba(227, 208, 208, 0.8);
+}
+
+[role=banner] {
+    background-color: blue;
+}
+
