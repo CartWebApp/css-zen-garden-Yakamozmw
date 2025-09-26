@@ -1,5 +1,5 @@
 /* Empty file for template. Remember to edit only this file and not the HTML file */
-h1 { font: bold 4.2rem Helvetica, Arial, sans-serif; margin: 0 0 0.5em; }
+h1 { font: bold 3.2rem Helvetica, Arial, sans-serif; margin: 0 0 0.5em; }
 h2 { font: bold 1.8rem Helvetica, Arial, sans-serif; margin: 0 0 1em; }
 h3 { font: bold 1.5rem Helvetica, Arial, sans-serif; margin: 0 0 1em; }
 
@@ -7,17 +7,30 @@ h3 { font: bold 1.5rem Helvetica, Arial, sans-serif; margin: 0 0 1em; }
     display: flex;
     flex-direction: row;
     justify-content: center;
-    background-color:blueviolet;
+    background-color:rgb(195, 234, 227);
+    align-items: flex-end;
+    height: fit-content;
 }
 
 .page-wrapper {
-    width: 50vw;
-    border: 5px solid black;
+    width: 85vw;
+    margin-top: 30px;
     padding: 20px;
-    background-color: rgba(227, 208, 208, 0.8);
+    background-color: #86bdddcc;
+    height: fit-content;
 }
 
-[role=banner] {
-    background-color: blue;
+[role=banner] > h1 {
+    background-color: #ea2e49;
+    display: inline-block;
+    padding-top: 0.5em;
+    padding-right: 1em;
+    padding-bottom: 0.5em;
+    padding-left: 1em;
 }
+
+[role=banner] > h2 {
+    display: inline-block;
+}
+
 
