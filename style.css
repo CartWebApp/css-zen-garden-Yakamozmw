@@ -1,36 +1,53 @@
 /* Empty file for template. Remember to edit only this file and not the HTML file */
-h1 { font: bold 3.2rem Helvetica, Arial, sans-serif; margin: 0 0 0.5em; }
-h2 { font: bold 1.8rem Helvetica, Arial, sans-serif; margin: 0 0 1em; }
-h3 { font: bold 1.5rem Helvetica, Arial, sans-serif; margin: 0 0 1em; }
 
 #css-zen-garden {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    background-color:rgb(195, 234, 227);
-    align-items: flex-end;
-    height: fit-content;
+    display: grid;
+    grid-template: repeat(60, 1fr) / repeat(30, 1fr);
+    height: 400vh;
+    background-color:lavender;
+}
+
+.page-wrapper > *{
+    display: none;
 }
 
 .page-wrapper {
-    width: 85vw;
-    margin-top: 30px;
-    padding: 20px;
-    background-color: #86bdddcc;
-    height: fit-content;
+    display: grid;
+    grid-template: repeat(60, 1fr) / repeat(30, 1fr);
+    grid-column: 2 / 30;
+    grid-row: 2 / 60;
+    background-color:powderblue;
 }
 
-[role=banner] > h1 {
+#zen-intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    grid-column: 2 / 20;
+    grid-row: 2 / 25;
+}
+
+[role = "banner"] > h1{
+    align-self: flex-end;
     background-color: #ea2e49;
+    color: #fff;
     display: inline-block;
-    padding-top: 0.5em;
-    padding-right: 1em;
-    padding-bottom: 0.5em;
-    padding-left: 1em;
+    padding: 0.5em 1em;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-style: bold;
+    font-size: 3.2em;
+    font-weight: normal;
 }
 
-[role=banner] > h2 {
+[role = "banner"] > h2 {
+    color: #fff;
     display: inline-block;
+    font-weight: 900;
+    font-size: 10em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: 0;
+    margin-bottom: 1em;
 }
+
 
 
