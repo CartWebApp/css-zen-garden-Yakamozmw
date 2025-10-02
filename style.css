@@ -71,11 +71,10 @@ a {
 
 .preamble {
     background-color:rgb(216, 151, 207);
-    display: inline-block;
-    height: 110%;
-    width: 110%;
+    height: 100%;
+    width: 107%;
     align-self: flex-end;
-    padding-left: 20%;
+    padding-left: 2%;
 }
 
 [role = article] > h3 {
