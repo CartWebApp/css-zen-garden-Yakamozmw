@@ -45,6 +45,10 @@
     font-weight: normal;
 }
 
+.preamble {
+    background-color:rgb(216, 151, 207)
+}
+
 [role=banner] > h2 {
     color: #fff;
     display: inline-block;
