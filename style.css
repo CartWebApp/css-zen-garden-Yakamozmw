@@ -162,6 +162,7 @@ a {
     color: #243d47;
 }
 
+/* checks off the :nth-last-child() selector in my opinion*/
 .requirements > p:nth-last-child(2) {
     border-bottom: 3px solid purple;
     padding-bottom: 3em;
@@ -300,9 +301,114 @@ a[href^="http"] {
     border-radius: 15px;
 }
 
+a[href$="index"] {
+    text-decoration: underline wavy rgb(139, 214, 236);
+    letter-spacing: 0.05em;
+}
 
+a[href*="page1"] {
+    text-decoration: underline wavy rgb(166, 228, 202);
+    letter-spacing: 0.05em;
+}
 
+a:active {
+    color: white;
+    background-color: purple;
+}
 
+div:empty {
+    display: block;
+    width: 100%;
+    height: 100%;
+    grid-column: 1 / 31;
+    grid-row: 1 / 2;
+    background-color: rgba(175, 245, 204, 0.2);
+}
+
+p:first-child {
+    font-weight: bold;
+}
+
+p::first-letter {
+    font-size: 1.5em;
+}
+
+/* checks off the :not() selector and also the ::first-line selector in my opinion*/
+.main.supporting p:not([role="contentinfo"])::first-line {
+    font-family:'Times New Roman', Times, serif;
+    font-style: italic;
+    font-weight: bold;
+}
+
+p:first-of-type {
+    letter-spacing: 0.05em;
+}
+
+/* this is useless since there are no input elements :/ */
+input:focus {
+    outline: 3px solid purple;
+}
+
+a:hover {
+    color: rgb(82, 132, 179);
+    text-decoration-color: rgb(161, 223, 240);
+}
+
+a:link {
+    font-style: italic;
+}
+
+a:visited {
+    font-style: normal;
+    text-decoration: line-through;
+}
+
+/* checks off the :last-of-type selector */
+.main.supporting p:not([role="contentinfo"]):last-of-type {
+    padding-bottom: 1em;
+    border-bottom: 2px solid rgb(255, 255, 255);
+}
+
+/* I'm really starting to run out of ideas here */
+a:nth-child(2) {
+    font-size: 1.5em;
+    letter-spacing: 0.05em;
+}
+
+/* at this point I'm just making the website uglier */
+p:nth-last-of-type(2) {
+    letter-spacing: 0.05em;
+}
+
+p:nth-of-type(2) {
+    letter-spacing: 0.05em;
+}
+
+h3:only-of-type {
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+p:only-child {
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+:root {
+    font-size: 16px;
+}
+
+::selection {
+    background:
+    rgb(168, 248, 224);
+    color:rgb(59, 114, 111);
+}
+
+abbr {
+    font-size: 1.2em;
+    text-decoration: underline dotted rgb(123, 89, 133);
+    cursor: help;
+}
 
 
 
