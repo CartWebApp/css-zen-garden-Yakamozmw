@@ -2,7 +2,7 @@
 
 /* Overall Webpage */
 
-p {
+p, a {
     font-size: 1.4em;
     line-height: 1.5em;
     margin-bottom: 1.5em;
@@ -205,6 +205,10 @@ footer > a {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+.design-selection .select{
+    color:rgb(247, 161, 250);
+}
+
 .resources {
     color: rgb(186, 255, 226);
     font-size: 2.5em;
@@ -266,6 +270,37 @@ a.design-name {
     height: 100%;
     background: rgba(110, 190, 146, 0.4);
 }
+
+/* miscellaneous */
+
+a.design-name ~ a {
+    text-decoration: underline wavy rgb(211, 128, 211);
+    letter-spacing: 0.05em;
+}
+
+a[href^="http"] {
+    text-decoration: underline wavy rgb(123, 89, 133);
+    letter-spacing: 0.05em;
+}
+
+.main.supporting {
+    background-color:#a0e1c2;
+}
+
+[href] {
+    text-decoration-thickness: 1px;
+}
+
+[title ~= "CSS"] {
+    text-decoration: underline wavy rgb(110, 163, 147);
+    letter-spacing: 0.05em;
+}
+
+[id|="zen"] {
+    border-radius: 15px;
+}
+
+
 
 
 
